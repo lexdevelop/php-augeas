@@ -1,0 +1,31 @@
+{
+    "name": "lexdevelop/php-augeas",
+    "description": "PHP bindings for Augeas",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Cvetkovic",
+            "email": "stefanlex90@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {"Augeas\\": "src/Augeas"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Augeas\\": "tests/Augeas"}
+    },
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor",
+            "phpunit --testdox"
+        ]
+    }
+}
