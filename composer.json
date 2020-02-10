@@ -10,17 +10,18 @@
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "ext-ffi": "*"
     },
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "^1.0",
         "phpunit/phpunit": "^8.5"
     },
     "autoload": {
-        "psr-4": {"Augeas\\": "src/Augeas"}
+        "psr-4": {"AugeasLib\\": "src/Augeas"}
     },
     "autoload-dev": {
-        "psr-4": {"Augeas\\": "tests/Augeas"}
+        "psr-4": {"AugeasLib\\": "tests/Augeas"}
     },
     "scripts": {
         "test": [

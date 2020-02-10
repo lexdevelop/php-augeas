@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Augeas;
+namespace AugeasLib;
 
 class AugeasTest extends \PHPUnit\Framework\TestCase {
 
